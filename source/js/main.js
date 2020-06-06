@@ -11,16 +11,19 @@ import ScrollReveal from 'scrollreveal'
 // import 'fancybox';
 // import 'bxslider';
 
+
 $(document).ready(function() {
   // Mobile menu trigger script
-  $(".menu-trigger").click(function() {
+  const $menuTrigger = $(".menu-trigger");
+
+  $menuTrigger.click(function() {
       $(this).toggleClass('active');
       $(".mobile-menu").toggleClass('visible');
   });
 
-
   $('.mobile-menu .nav-link').click(function () {
-    $(".mobile-menu").toggleClass('visible');
+    $(".mobile-menu").removeClass('visible');
+    $menuTrigger.removeClass('active');
   });
 
   // Smoothscroll script
@@ -29,7 +32,8 @@ $(document).ready(function() {
           disTarget = dis.children('a').data('target'),
           ScrollTo = $(disTarget).offset().top;
       dis.siblings('.nav-link').removeClass('active');
-      dis.addClass('active')
+      dis.addClass('active');
+      $(this).toggleClass('active');
       $('html,body').animate({ scrollTop: ScrollTo });
   });
   // contact form script

@@ -73,8 +73,10 @@ body {
 }
 
 #HeroBanner {
-  background-image: url(../images/hero.jpg);
+  background: url(../images/hero.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .hero-content {
     vertical-align: bottom;
