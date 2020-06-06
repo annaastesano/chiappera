@@ -1,3 +1,7 @@
+body {
+  font-family: 'Muli', sans-serif;
+}
+
 .header .site-logo-wrap .logo img {
   width: 60px;
 }
@@ -19,11 +23,63 @@
   .hero-content {
     vertical-align: bottom;
     padding: 0 15px 301px 15px;
+    color: white;
+    background-color: rgba(10, 40, 60, 0);
+    animation: 1s ease-in fade-out 0.4s forwards;
+  }
+
+
+  h1 {
+    letter-spacing: .1em;
+    opacity: 0;
+    animation: 1s ease-out 1.2s fade-in forwards;
+  }
+
+  h2 {
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: .4em;
+    animation: 0.8s ease-out 1.2s fade-in-2 forwards;
+  }
+
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -15px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-in-2 {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    background-color: rgba(10, 40, 60, 0);
+  }
+  to {
+    background-color: rgba(10, 40, 60, 0.4);
   }
 }
 
 
-.about--valentina {
+.about--right {
 
   &::before {
     display: none;
@@ -35,7 +91,7 @@
   }
 }
 
-.about--anna {
+.about--left {
   &::before {
     display: none;
 
@@ -57,6 +113,19 @@
       padding-left: 50px;
       padding-right: 0;
     }
+  }
+}
+
+
+.apartment {
+  &__info {
+    font-size: 13px;
+    font-weight: lighter;
+    padding-top: 5px;
+  }
+
+  &__gallery {
+    margin: 40px 0;
   }
 }
 
@@ -278,4 +347,65 @@
   .events {
       padding:  0;
   }
+}
+
+
+.nGY2 .nGY2Gallery {
+  text-align: left !important;
+}
+
+.contact-us {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @include mq($from: desktop) {
+      flex-direction: row;
+    }
+
+  }
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  flex: 1;
+  border: 1px solid #212529;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.contact-container {
+  @include mq($from: desktop) {
+    max-width: 60%;
+    padding-right: 30px;
+  }
+
+  .form-wrap {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+
+    @include mq($from: desktop) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+
+.contact-us .form-wrap label {
+  z-index: 1;
+}
+
+
+.contact-us .submit-btn {
+  text-align: left;
 }

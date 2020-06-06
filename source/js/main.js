@@ -2,15 +2,14 @@
 // import {init as initHeader} from './components/header';
 import {init as initEvents} from './components/events';
 // import SmoothScroll from 'smooth-scroll';
-import './components/events/events-controller';
+// import './components/events/events-controller';
 
 // import initPlugins from './all-plugins';
 import 'jquery';
 import 'bootstrap';
 import ScrollReveal from 'scrollreveal'
-import 'fancybox';
+// import 'fancybox';
 // import 'bxslider';
-
 
 $(document).ready(function() {
   // Mobile menu trigger script
@@ -87,4 +86,106 @@ $(document).ready(function() {
 // initHeader();
 // initSmoothScrollLinks();
 // initSmoothScrollLinks();
-initEvents();
+// initEvents();
+
+const nanogalletyConf = {
+  // GALLERY AND THUMBNAIL LAYOUT
+  itemsBaseURL: '/static/',
+  // items: [
+  //   { src: 'berlin1.jpg', srct: 'berlin1_t.jpg', title: 'Berlin 1' },
+  //   { src: 'berlin2.jpg', srct: 'berlin2_t.jpg', title: 'Berlin 2' },
+  //   { src: 'berlin3.jpg', srct: 'berlin3_t.jpg', title: 'Berlin 3' }
+  // ],
+  galleryMosaic : [
+    { w: 2, h: 2, c: 1, r: 1 },
+    { w: 1, h: 1, c: 3, r: 1 },
+    { w: 1, h: 1, c: 3, r: 2 },
+    { w: 1, h: 1, c: 4, r: 1 },
+    { w: 1, h: 1, c: 4, r: 2 },
+    // { w: 2, h: 2, c: 5, r: 2 },
+    // { w: 1, h: 1, c: 4, r: 3 },
+    // { w: 2, h: 1, c: 2, r: 3 },
+    // { w: 1, h: 2, c: 1, r: 3 },
+    // { w: 1, h: 1, c: 2, r: 4 },
+    // { w: 2, h: 1, c: 3, r: 4 },
+    // { w: 1, h: 1, c: 5, r: 4 },
+    // { w: 1, h: 1, c: 6, r: 4 }
+  ],
+  galleryMosaicXS : [
+    { w: 2, h: 2, c: 1, r: 1 },
+    { w: 1, h: 2, c: 1, r: 3 },
+    // { w: 2, h: 1, c: 2, r: 3 },
+    // { w: 1, h: 1, c: 2, r: 4 },
+    // { w: 1, h: 1, c: 3, r: 4 }
+  ],
+  galleryMosaicSM : [
+    { w: 2, h: 2, c: 1, r: 1 },
+    { w: 1, h: 1, c: 3, r: 1 },
+    // { w: 1, h: 1, c: 3, r: 2 },
+    // { w: 1, h: 2, c: 1, r: 3 },
+    // { w: 2, h: 1, c: 2, r: 3 },
+    // { w: 1, h: 1, c: 2, r: 4 },
+    // { w: 1, h: 1, c: 3, r: 4 }
+  ],
+  galleryMaxRows: 1,
+  galleryDisplayMode: 'rows',
+
+  thumbnailHeight: '250', thumbnailWidth: '320',
+  thumbnailAlignment: 'scaled',
+  thumbnailGutterWidth: 10, thumbnailGutterHeight: 10,
+  thumbnailBorderHorizontal: 0, thumbnailBorderVertical: 0,
+
+  thumbnailToolbarImage: null,
+  thumbnailToolbarAlbum: null,
+  thumbnailLabel: { display: false },
+
+  // DISPLAY ANIMATION
+  galleryDisplayTransitionDuration: 500,
+  thumbnailDisplayTransition: 'slideLeft',
+  thumbnailDisplayTransitionDuration: 300,
+  thumbnailDisplayInterval: 10,
+
+  // THUMBNAIL HOVER ANIMATION
+  // thumbnailBuildInit2: 'image_scale_1.15',
+  // thumbnailHoverEffect2: 'thumbnail_scale_1.00_1.05_300|image_scale_1.15_1.00',
+  touchAnimation: true,
+  touchAutoOpenDelay: 500,
+
+  // LIGHTBOX
+  viewerToolbar: { display: false },
+  viewerTools:    {
+    topLeft:   'label',
+    topRight:  'fullscreenButton, closeButton'
+  },
+
+  // DEEP LINKING
+  locationHash: true
+}
+
+const conf1 = Object.assign({}, {
+  items: [
+    { src: 'images/apartment1/1.jpg', srct: 'images/apartment1/t/1.jpg', title: 'Berlin 1' },
+    { src: 'images/apartment1/5.jpg', srct: 'images/apartment1/t/5.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment1/2.jpg', srct: 'images/apartment1/t/2.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment1/3.jpg', srct: 'images/apartment1/t/3.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment1/4.jpg', srct: 'images/apartment1/t/4.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment1/6.jpg', srct: 'images/apartment1/t/6.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment1/7.jpg', srct: 'images/apartment1/t/7.jpg', title: 'Berlin 2' },
+  ],
+}, nanogalletyConf);
+
+const conf2 = Object.assign({}, {
+  items: [
+    { src: 'images/apartment2/1.jpg', srct: 'images/apartment2/1.jpg', title: 'Berlin 1' },
+    { src: 'images/apartment2/2.jpg', srct: 'images/apartment2/2.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment2/3.jpg', srct: 'images/apartment2/3.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment2/4.jpg', srct: 'images/apartment2/4.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment2/5.jpg', srct: 'images/apartment2/5.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment2/6.jpg', srct: 'images/apartment2/6.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment2/7.jpg', srct: 'images/apartment2/7.jpg', title: 'Berlin 2' },
+  ]
+}, nanogalletyConf);
+
+
+jQuery("#nanogallery-flat1").nanogallery2(conf1);
+jQuery("#nanogallery-flat2").nanogallery2(conf2);

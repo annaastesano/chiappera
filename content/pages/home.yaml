@@ -1,4 +1,5 @@
-$title@: The girls in the magnesium dress
+$title@: La Meizoun del Muret
+sub_title@: Apartments in Chiappera
 $path: /
 $view: /views/pages/home.html
 
@@ -10,27 +11,27 @@ $localization:
     - fr
     - de
 
-description@: Harp and double-bass duo.
+description@: Apartments in Chiappera, Valle Maira.
 
-menu_home@: Home
-menu_project@: Project
-menu_events@: Events
-menu_media@: Media
+menu_home@: Chi siamo
+menu_apartment_1@: Apartment Muret
+menu_apartment_2@: Apartment Eschirol
 menu_contact@: Contact
 
-section_project_title@: The project
-section_project_desc@: The Girls in the Magnesium Dress is an innovative chamber music collaboration between double bass and harp. Named after one of the most renowned orchestral pieces by Frank Zappa, the ensemble involves the audience in a new musical experience led by Valentina Scheldhofen Ciardelli and Anna Astesano. Their versatile repertoire appeals to a wide public with sparkling transcriptions from the opera world, virtuoso repertoire and 21st century music, reversing the stereotypes surrounding both instruments. The duo collaborates with established composers such as John Alexander, Paul Patterson and Kurt Morgan. The Girls have performed in several important London venues such as St- Martin-in-the-Fields, Wigmore Hall, Greenwich Theatre, St. James Piccadilly Church, Trinity Church, the GSM Auditorium, Sala dell’Affresco and Chiesa di S. Micheletto in Lucca.
+flat_1@: Apartment Muret
+flat_1_summary@: 5 guests - 2 bedroom - 1 bathroom
+flat_1_desc@: "<p>Muret apartment looks out to the Rocca Provenzale, offering a unique vue and peace during your stay.</p><p>You enter in a big warm room divided into living room with stove, kitchen and stairs that allow you to access the mezzanine. The kitchen is equipped with fridge and microwave oven.</p><p>Sleeps available are five in total: king size bed 160x200 on the mezzanine and a bunk bed, with a third pull out bed, in a separate area from the main room.</p><p>The bathroom has a shower, a bidet and a washing machine.</p><p>The apartment is equipped with essential services such as sheets, towels, drying rack, television and hair dryer. </p><p>The home heating is independent with both heaters and wood stove in the living room. The apartment has a little courtyard with outside table and chairs. </p><p>It is possible to park your car on the main square just outside Chiappera, as it should not be allowed to cars to enter the village.</p>"
 
+flat_2@: Apartment Eschirol
+flat_2_summary@: 4 guests - 1 bedroom - 1 bathroom
+flat_2_desc@: <p>Eschirol apartment will open its door soon to its guests!</p><p>Eschirol apartment is quiet and intimate, looking over the inhabited area of Chiappera.</p><p>You enter in a warm and bright room divided into living room with stove, night corner and kitchen.  The kitchen is equipped with fridge, oven and dishwasher.</p><p>Sleeps available are four in total.</p><p>The bathroom has a shower, a bidet and a washing machine.</p><p>The apartment is equipped with essential services such as sheets, towels, drying rack, television and hair dryer. </p><p>The home heating is independent with both heaters and wood stove in the living room. The apartment has a little front yard with outside table and chairs. </p><p>It is possible to park your car on the main square just outside Chiappera, as it should not be allowed for cars to enter the village.</p>
 
-about_valentina_title: Valentina Ciardelli
-about_valentina_desc@: <p> Valentina was born in Pietrasanta (Italy) to a German mother and Italian father. Initially a pianist, she started to play double bass in late 2009, graduating with Honours from the “Istituto Musicale L. Boccherini” in Lucca in October 2014, later at the Royal College of Music in July 2016 and with Leon Bosch in 2017 at Trinity Laban Conservatoire of Music and Dance </p <p> Valentina also graduated in composition in March 2014 with Honours in conservatoire Giacomo Puccini in La Spezia. Valentina has won several awards, prizes and orchestral auditions such as the Gustav Mahler Academy 2016, BBC SO training scheme. She recently won the Artist in Residence at BANFF, Alberta (Canada), who will host her in September 2019 </p <p> She gave solo performances with “I Solisti Veneti” with Maestro Claudio Scimone, winning the prestigious scholarship granted by the Academy (Proliber). In London, she has performed as a soloist in the prestigious Wigmore Hall and St. Martin-in-the-Fields. She was invited to the pre-opening of the Zappanale 2018 in St.Katharinen Kirche (Hamburg) with her Trio featuring the Worldwide saxophone virtuoso Napoleon Murphy Brock </p <p> She been awarded as Junior Fellow Carne Trust at the Trinity Laban Conservatoire. She also won a scholarship from “Associazione Animando” in Lucca for a research project investigating the music of Giacomo Puccini’s ancestors and her work had been published by Da Vinci Editions. Valentina is focused to expand the double bass solo repertoire composing new virtuoso pieces. She also has a wide Jazz experience. She plays a Scipioni double bass 2014 </p>
+hero_title@: Home
+hero_description@: Chiappera is the last Valle Maira inhabited village, situated at the bottom of the Rocca Provenzale and the Stroppia Waterfalls. The untouched and untamed nature of the valley has transformed Chiappera in the perfect departing point for hiking and mountain bike trips, rock climbing and relaxing walks, surrounded by a breathtaking landscape. The Meizoun del Muret offers to its residents total independence during their stay, with two available apartments equipped at best for every need.
 
-about_anna_title: Anna Astesano
-about_anna_desc@: <p> After her Bachelor and Master studies at the CNSMD in Lyon, Anna joined the harp class at Trinity and Laban Conservatoire of Music and Dance in the Postgraduate Advanced Diploma course. </p> <p>Between 2014 and 2015 she has been harpist at “Teatro alla Scala” Academy in Milan, being conducted by Maestro Fabio Luisi, David Coleman, Marco Armiliato, and many others.</p> <p> In June 2015 she won the audition as first harp at the “Luigi Cherubini” Orchestra, conducted by Maestro Riccardo Muti, having the chance to collaborate with artists such as Vadim Repin, Svetlana Zakharova and the Bolshoi Ballet and Renata Scotto </p> <p> Since 2017 she has been awarded scholarships offered by the Turin CRT Foundation, “De Sono” Association and Turin "Lions Club". In 2018 She was awarded the “Featured Young Performer” Award by the London Ear Festival, and the  "John Marson Prize 2018 for best performer". In 2019 sha has been the Future Foyle First harpist in the programme promoted by the London Philharmonic Orchestra. She has recently won the audition as second harpist of the Maggio Musicale Fiorentino Opera in Florence. </p> <p> She has been working with the Royal Opera House in Covent Garden, the London Philharmonic Orchestra, the Orchestra Sinfonica Nazionale (RAI) in Turin, the Kolobov Novaya Opera Theatre of Moscow, Teatro del Maggio Fiorentino Orchestra in Florence, the London Southbank Sinfonia, performing in Wigmore Hall, the Royal Festival Hall, the Royal Albert Hall, St-Martins-in-the-Fields between the others. </p> <p> She is a Concordia Foundation and a Park Lane Group Artist. </p>
-
-section_contact_title@: Get In Touch
-section_contact_details@: Contact Details
-section_contact_send_message@: Send Us Message
+section_contact_title@: Bookings
+section_contact_text@: <p>The minimum requested stay at the Meizoun del Muret is one week, but we always try to accomodate our guests when requesting shorter stays.</p><p>In order to receive all the information needed to finalise your booking, prices and availabilities, we invite you to contact us, filling the form here, or calling us at (+39)3493251036.</p><p>We speak Italian, French, English and a bit of German!</p>
+section_contact_send_message@: Contact Us
 
 your_name@: Your name
 your_mail@: Your email address

@@ -2,6 +2,15 @@
   "/content/pages/home.yaml": [
     "/dist/css/site.min.css",
     "/dist/js/site.min.js",
+    "/source/images/apartment1/1.jpg",
+    "/source/images/apartment1/2.jpg",
+    "/source/images/apartment1/3.jpg",
+    "/source/images/favicon/favicon.ico",
+    "/source/images/hero.jpg"
+  ],
+  "/content/pages/home@de.yaml": [
+    "/dist/css/site.min.css",
+    "/dist/js/site.min.js",
     "/source/images/favicon/favicon.ico",
     "/source/images/hero.jpg"
   ],
