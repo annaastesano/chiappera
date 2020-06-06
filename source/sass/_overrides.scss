@@ -453,6 +453,10 @@ body {
     padding-right: 0;
     padding-bottom: 30px;
 
+    .add-title {
+      padding-bottom: 30px;
+    }
+
     @include mq($from: desktop) {
       padding-bottom: 0;
     }
@@ -467,4 +471,12 @@ body {
 
 .contact-us .submit-btn {
   text-align: left;
+}
+
+
+.contact-us .floating-input:focus ~ label, .contact-us .floating-input:not(:placeholder-shown) ~ label {
+  top: -18px;
+  font-size: 12px;
+  color: #0098aa;
+  transition: top 0.2s ease-in-out;
 }
