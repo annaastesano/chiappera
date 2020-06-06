@@ -144,9 +144,9 @@ const nanogalletyConf = {
   thumbnailLabel: { display: false },
 
   // DISPLAY ANIMATION
-  // galleryDisplayTransitionDuration: 100,
+  galleryDisplayTransitionDuration: 0,
   thumbnailDisplayTransition: 'fadeIn',
-  // thumbnailDisplayTransitionDuration: 50,
+  thumbnailDisplayTransitionDuration: 0,
   // thumbnailDisplayInterval: 10,
 
   // THUMBNAIL HOVER ANIMATION
