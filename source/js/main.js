@@ -173,7 +173,7 @@ const conf1 = Object.assign({}, {
     { src: 'images/apartment1/3.jpg', srct: 'images/apartment1/t/3.jpg',},
     { src: 'images/apartment1/4.jpg', srct: 'images/apartment1/t/4.jpg',},
     { src: 'images/apartment1/6.jpg', srct: 'images/apartment1/t/6.jpg',},
-    { src: 'images/apartment1/7.jpg', srct: 'images/apartment1/t/7.jpg',},
+    // { src: 'images/apartment1/7.jpg', srct: 'images/apartment1/t/7.jpg',},
   ],
 }, nanogalletyConf);
 
