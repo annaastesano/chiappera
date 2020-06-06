@@ -6,7 +6,7 @@ import {init as initEvents} from './components/events';
 
 // import initPlugins from './all-plugins';
 import 'jquery';
-import 'bootstrap';
+// import 'bootstrap';
 import ScrollReveal from 'scrollreveal'
 // import 'fancybox';
 // import 'bxslider';
@@ -140,10 +140,10 @@ const nanogalletyConf = {
   thumbnailLabel: { display: false },
 
   // DISPLAY ANIMATION
-  galleryDisplayTransitionDuration: 500,
-  thumbnailDisplayTransition: 'slideLeft',
-  thumbnailDisplayTransitionDuration: 300,
-  thumbnailDisplayInterval: 10,
+  // galleryDisplayTransitionDuration: 100,
+  thumbnailDisplayTransition: 'fadeIn',
+  // thumbnailDisplayTransitionDuration: 50,
+  // thumbnailDisplayInterval: 10,
 
   // THUMBNAIL HOVER ANIMATION
   // thumbnailBuildInit2: 'image_scale_1.15',
@@ -154,7 +154,6 @@ const nanogalletyConf = {
   // LIGHTBOX
   viewerToolbar: { display: false },
   viewerTools:    {
-    topLeft:   'label',
     topRight:  'fullscreenButton, closeButton'
   },
 
@@ -164,28 +163,63 @@ const nanogalletyConf = {
 
 const conf1 = Object.assign({}, {
   items: [
-    { src: 'images/apartment1/1.jpg', srct: 'images/apartment1/t/1.jpg', title: 'Berlin 1' },
-    { src: 'images/apartment1/5.jpg', srct: 'images/apartment1/t/5.jpg', title: 'Berlin 2' },
-    { src: 'images/apartment1/2.jpg', srct: 'images/apartment1/t/2.jpg', title: 'Berlin 2' },
-    { src: 'images/apartment1/3.jpg', srct: 'images/apartment1/t/3.jpg', title: 'Berlin 2' },
-    { src: 'images/apartment1/4.jpg', srct: 'images/apartment1/t/4.jpg', title: 'Berlin 2' },
-    { src: 'images/apartment1/6.jpg', srct: 'images/apartment1/t/6.jpg', title: 'Berlin 2' },
-    { src: 'images/apartment1/7.jpg', srct: 'images/apartment1/t/7.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment1/1.jpg', srct: 'images/apartment1/t/1.jpg',},
+    { src: 'images/apartment1/5.jpg', srct: 'images/apartment1/t/5.jpg',},
+    { src: 'images/apartment1/2.jpg', srct: 'images/apartment1/t/2.jpg',},
+    { src: 'images/apartment1/3.jpg', srct: 'images/apartment1/t/3.jpg',},
+    { src: 'images/apartment1/4.jpg', srct: 'images/apartment1/t/4.jpg',},
+    { src: 'images/apartment1/6.jpg', srct: 'images/apartment1/t/6.jpg',},
+    { src: 'images/apartment1/7.jpg', srct: 'images/apartment1/t/7.jpg',},
   ],
 }, nanogalletyConf);
 
 const conf2 = Object.assign({}, {
   items: [
-    { src: 'images/apartment2/1.jpg', srct: 'images/apartment2/1.jpg', title: 'Berlin 1' },
-    { src: 'images/apartment2/2.jpg', srct: 'images/apartment2/2.jpg', title: 'Berlin 2' },
-    { src: 'images/apartment2/3.jpg', srct: 'images/apartment2/3.jpg', title: 'Berlin 2' },
-    { src: 'images/apartment2/4.jpg', srct: 'images/apartment2/4.jpg', title: 'Berlin 2' },
-    { src: 'images/apartment2/5.jpg', srct: 'images/apartment2/5.jpg', title: 'Berlin 2' },
-    { src: 'images/apartment2/6.jpg', srct: 'images/apartment2/6.jpg', title: 'Berlin 2' },
-    { src: 'images/apartment2/7.jpg', srct: 'images/apartment2/7.jpg', title: 'Berlin 2' },
+    { src: 'images/apartment2/1.jpg', srct: 'images/apartment2/1.jpg', },
+    { src: 'images/apartment2/2.jpg', srct: 'images/apartment2/2.jpg', },
+    { src: 'images/apartment2/3.jpg', srct: 'images/apartment2/3.jpg', },
+    { src: 'images/apartment2/4.jpg', srct: 'images/apartment2/4.jpg', },
+    { src: 'images/apartment2/5.jpg', srct: 'images/apartment2/5.jpg', },
   ]
 }, nanogalletyConf);
+
+const confHero = Object.assign({}, nanogalletyConf, {
+  items: [
+    { src: 'images/hero/mosaico1.jpg', srct: 'images/hero/t/mosaico1.jpg', },
+    { src: 'images/hero/mosaico2.jpg', srct: 'images/hero/t/mosaico2.jpg', },
+    { src: 'images/hero/mosaico3.jpg', srct: 'images/hero/t/mosaico3.jpg', },
+    { src: 'images/hero/mosaico4.jpg', srct: 'images/hero/t/mosaico4.jpg', },
+    { src: 'images/hero/mosaico5.jpg', srct: 'images/hero/t/mosaico5.jpg', },
+    { src: 'images/hero/mosaico6.jpg', srct: 'images/hero/t/mosaico6.jpg', },
+    { src: 'images/hero/mosaico7.jpg', srct: 'images/hero/t/mosaico7.jpg', },
+    { src: 'images/hero/mosaico8.jpg', srct: 'images/hero/t/mosaico8.jpg', },
+    { src: 'images/hero/mosaico9.jpg', srct: 'images/hero/t/mosaico9.jpg', },
+  ],
+  galleryMosaic : [
+    { w: 1, h: 1, c: 1, r: 1 },
+    { w: 1, h: 1, c: 2, r: 1 },
+    { w: 1, h: 1, c: 3, r: 1 },
+    { w: 1, h: 1, c: 1, r: 2 },
+    { w: 1, h: 1, c: 2, r: 2 },
+    { w: 1, h: 1, c: 3, r: 2 },
+    { w: 1, h: 1, c: 1, r: 3},
+    { w: 1, h: 1, c: 2, r: 3 },
+    { w: 1, h: 1, c: 3, r: 3 },
+  ],
+  galleryMosaicXS : [
+    { w: 2, h: 2, c: 1, r: 1 },
+    { w: 1, h: 1, c: 2, r: 1 },
+    { w: 1, h: 1, c: 3, r: 1 },
+    { w: 1, h: 1, c: 1, r: 2 },
+    { w: 1, h: 1, c: 2, r: 2 },
+    { w: 1, h: 1, c: 3, r: 2 },
+    { w: 1, h: 1, c: 1, r: 3},
+    { w: 1, h: 1, c: 2, r: 3 },
+    { w: 1, h: 1, c: 3, r: 3 },
+  ],
+});
 
 
 jQuery("#nanogallery-flat1").nanogallery2(conf1);
 jQuery("#nanogallery-flat2").nanogallery2(conf2);
+jQuery("#nanogallery-hero").nanogallery2(confHero);

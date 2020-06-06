@@ -1,5 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Muli', sans-serif;
+  font-size: 18px;
+
+  p {
+    font-size: 18px;
+
+  }
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+@media (min-width: 576px) {
+  .container {
+      max-width:540px
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width:720px
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      max-width:960px
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width:1140px
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+
+
+#MainContainer p {
+  font-size: 18px;
 }
 
 .header .site-logo-wrap .logo img {
@@ -46,6 +102,8 @@ body {
   }
 
 }
+
+
 
 @keyframes fade-in {
   from {
@@ -343,6 +401,7 @@ body {
 }
 
 
+
 @media (max-width: 767px) {
   .events {
       padding:  0;
@@ -350,7 +409,7 @@ body {
 }
 
 
-.nGY2 .nGY2Gallery {
+.apartment .nGY2 .nGY2Gallery {
   text-align: left !important;
 }
 

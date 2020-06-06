@@ -14,6 +14,7 @@
               <div class="main-menu hidden-md-down">
                   <ul class="menu-list">
                       <li class="nav-link"><a href="javascript:void(0)" data-target="#HeroBanner">{{_(doc.menu_home)}}</a></li>
+                      <li class="nav-link"><a href="javascript:void(0)" data-target="#about">{{_(doc.menu_about)}}</a></li>
                       <li class="nav-link"><a href="javascript:void(0)" data-target="#apartment-muret">{{_(doc.menu_apartment_1)}}</a></li>
                       <li class="nav-link"><a href="javascript:void(0)" data-target="#apartment-eschirol">{{_(doc.menu_apartment_2)}}</a></li>
                       <li class="nav-link"><a href="javascript:void(0)" data-target="#contact-us">{{_(doc.menu_contact)}}</a></li>
@@ -23,6 +24,7 @@
           <div class="mobile-menu hidden-lg-up">
               <ul class="mobile-menu-list">
                   <li class="nav-link"><a href="javascript:void(0)" data-target="#HeroBanner">{{_(doc.menu_home)}}</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)" data-target="#about">{{_(doc.menu_about)}}</a></li>
                   <li class="nav-link"><a href="javascript:void(0)" data-target="#apartment-muret">{{_(doc.menu_apartment_1)}}</a></li>
                   <li class="nav-link"><a href="javascript:void(0)" data-target="#apartment-eschirol">{{_(doc.menu_apartment_2)}}</a></li>
                   <li class="nav-link"><a href="javascript:void(0)" data-target="#contact-us">{{_(doc.menu_contact)}}</a></li>
@@ -38,13 +40,15 @@
           <h2>{{_(doc.sub_title)}}</h2>
       </div>
   </section>
-  <section id="project" class="section">
+  <section id="about" class="section">
       <div class="container">
           <div class="block-heading">
               <h2>{{_(doc.hero_title)}}</h2>
               <p>
                 {{_(doc.hero_description)}}
               </p>
+              <div id="nanogallery-hero" class="apartment__gallery">
+              </div>
           </div>
       </div>
   </section>
@@ -68,7 +72,7 @@
         </div>
       </div>
   </section>
-  <section id="apartment-muret" class="section apartment apartment">
+  <section id="apartment-eschirol" class="section apartment apartment">
     <div class="container">
       <h2>
         {{_(doc.flat_2)}}

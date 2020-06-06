@@ -19,7 +19,7 @@ module.exports = function(gulp) {
     };
 
     if (dev) {
-      sassOpts.outputStyle = 'expanded';
+      sassOpts.outputStyle = 'compressed';
     } else {
       sassOpts.outputStyle = 'compressed';
     }

@@ -13,10 +13,14 @@ $localization:
 
 description@: Apartments in Chiappera, Valle Maira.
 
-menu_home@: Chi siamo
+menu_home@: Home
+menu_about@: About
 menu_apartment_1@: Apartment Muret
 menu_apartment_2@: Apartment Eschirol
 menu_contact@: Contact
+
+hero_title@: About us
+hero_description@: Chiappera is the last Valle Maira inhabited village, situated at the bottom of the Rocca Provenzale and the Stroppia Waterfalls. The untouched and untamed nature of the valley has transformed Chiappera in the perfect departing point for hiking and mountain bike trips, rock climbing and relaxing walks, surrounded by a breathtaking landscape. The Meizoun del Muret offers to its residents total independence during their stay, with two available apartments equipped at best for every need.
 
 flat_1@: Apartment Muret
 flat_1_summary@: 5 guests - 2 bedroom - 1 bathroom
@@ -26,8 +30,6 @@ flat_2@: Apartment Eschirol
 flat_2_summary@: 4 guests - 1 bedroom - 1 bathroom
 flat_2_desc@: <p>Eschirol apartment will open its door soon to its guests!</p><p>Eschirol apartment is quiet and intimate, looking over the inhabited area of Chiappera.</p><p>You enter in a warm and bright room divided into living room with stove, night corner and kitchen.  The kitchen is equipped with fridge, oven and dishwasher.</p><p>Sleeps available are four in total.</p><p>The bathroom has a shower, a bidet and a washing machine.</p><p>The apartment is equipped with essential services such as sheets, towels, drying rack, television and hair dryer. </p><p>The home heating is independent with both heaters and wood stove in the living room. The apartment has a little front yard with outside table and chairs. </p><p>It is possible to park your car on the main square just outside Chiappera, as it should not be allowed for cars to enter the village.</p>
 
-hero_title@: Home
-hero_description@: Chiappera is the last Valle Maira inhabited village, situated at the bottom of the Rocca Provenzale and the Stroppia Waterfalls. The untouched and untamed nature of the valley has transformed Chiappera in the perfect departing point for hiking and mountain bike trips, rock climbing and relaxing walks, surrounded by a breathtaking landscape. The Meizoun del Muret offers to its residents total independence during their stay, with two available apartments equipped at best for every need.
 
 section_contact_title@: Bookings
 section_contact_text@: <p>The minimum requested stay at the Meizoun del Muret is one week, but we always try to accomodate our guests when requesting shorter stays.</p><p>In order to receive all the information needed to finalise your booking, prices and availabilities, we invite you to contact us, filling the form here, or calling us at (+39)3493251036.</p><p>We speak Italian, French, English and a bit of German!</p>
