@@ -1,4 +1,6 @@
 $title@: La Meizoun del Muret
+description@: Apartments for rent in Chiappera, Valle Maira.
+
 sub_title@: Apartments in Chiappera
 $path: /
 $view: /views/pages/home.html
@@ -11,7 +13,6 @@ $localization:
     - fr
     - de
 
-description@: Apartments in Chiappera, Valle Maira.
 
 menu_home@: Home
 menu_about@: About
