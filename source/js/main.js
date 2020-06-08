@@ -168,11 +168,11 @@ const nanogalletyConf = {
 const conf1 = Object.assign({}, {
   items: [
     { src: 'images/apartment1/1.jpg', srct: 'images/apartment1/t/1.jpg',},
-    { src: 'images/apartment1/5.jpg', srct: 'images/apartment1/t/5.jpg',},
     { src: 'images/apartment1/2.jpg', srct: 'images/apartment1/t/2.jpg',},
     { src: 'images/apartment1/3.jpg', srct: 'images/apartment1/t/3.jpg',},
     { src: 'images/apartment1/4.jpg', srct: 'images/apartment1/t/4.jpg',},
-    { src: 'images/apartment1/6.jpg', srct: 'images/apartment1/t/6.jpg',},
+    { src: 'images/apartment1/5.jpg', srct: 'images/apartment1/t/5.jpg',},
+    // { src: 'images/apartment1/6.jpg', srct: 'images/apartment1/t/6.jpg',},
     // { src: 'images/apartment1/7.jpg', srct: 'images/apartment1/t/7.jpg',},
   ],
 }, nanogalletyConf);
