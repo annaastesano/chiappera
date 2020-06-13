@@ -11,7 +11,11 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://www.google-analytics.com">
 
-    <title>{{_(doc.title)}}</title>
+
+    {% for locale in podspec.localization.locales %}
+    <link rel="alternate" hreflang="{{locale}}"
+        href="{{g.doc('/content/pages/home.yaml', locale=locale).url}}" />
+    {% endfor %}
 
     <link href="{{g.static('/dist/css/site.min.css').url.path}}" rel="stylesheet">
     {% if podspec.meta.favicon_path %}
