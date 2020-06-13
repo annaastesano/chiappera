@@ -139,7 +139,44 @@
   </section>
 
   <!-- About Us section starts here -->
-  <section id="apartment-muret" class="section apartment section--grey">
+  <section id="apartment-muret" class="section apartment section--grey"
+    itemscope
+    itemtype="https://schema.org/Apartment"
+    numberOfRooms="3"
+    occupancy="5"
+    numberOfBathroomsTotal="1"
+    numberOfBedrooms="2"
+    numberOfFullBathrooms="1"
+  >
+
+    <section
+        class="aa-u-visually-hidden"
+        itemscope
+        itemtype="https://schema.org/Apartment">
+      <span itemprop="name">Appartamento Muret</span>
+
+      <span itemprop="numberOfRooms">3</span>
+      <span itemprop="occupancy">5</span>
+      <span itemprop="numberOfBathroomsTotal">1</span>
+      <span itemprop="numberOfBedrooms">2</span>
+      <span itemprop="numberOfFullBathrooms">1</span>
+
+      <img itemprop="photo" src="/static/images/apartment1/1.jpg" alt="Apartment" />
+
+      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="postalCode">12021</span>
+        <span itemprop="addressLocality">Chiappera</span>
+        <span itemprop="addressRegion">Valle Maira - Piemonte</span>,
+        <span itemprop="addressCountry">Italia</span>
+      </div>
+
+      <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+        <meta itemprop="latitude" content="44.492786"/>
+        <meta itemprop="longitude" content="6.925535"/>
+      </div>
+    </section>
+
+
       <div class="container">
         <h2>
           Appartamento Muret
@@ -158,6 +195,33 @@
       </div>
   </section>
   <section id="apartment-eschirol" class="section apartment apartment">
+      <section
+          class="aa-u-visually-hidden"
+          itemscope
+          itemtype="https://schema.org/Apartment">
+        <span itemprop="name">Appartamento Eschirol</span>
+
+        <span itemprop="numberOfRooms">1</span>
+        <span itemprop="occupancy">5</span>
+        <span itemprop="numberOfBathroomsTotal">1</span>
+        <span itemprop="numberOfBedrooms">1</span>
+        <span itemprop="numberOfFullBathrooms">1</span>
+
+        <img itemprop="photo" src="/static/images/apartment2/1.jpg" alt="Apartment" />
+
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="postalCode">12021</span>
+          <span itemprop="addressLocality">Chiappera</span>
+          <span itemprop="addressRegion">Valle Maira - Piemonte</span>,
+          <span itemprop="addressCountry">Italia</span>
+        </div>
+
+        <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+          <meta itemprop="latitude" content="44.492786"/>
+          <meta itemprop="longitude" content="6.925535"/>
+        </div>
+    </section>
+
     <div class="container">
       <h2>
         Appartamento Eschirol
