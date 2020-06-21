@@ -117,20 +117,20 @@ const nanogalletyConf = {
   ],
   galleryMosaicXS : [
     { w: 2, h: 2, c: 1, r: 1 },
-    { w: 1, h: 2, c: 1, r: 3 },
+    { w: 1, h: 2, c: 3, r: 1 },
     // { w: 2, h: 1, c: 2, r: 3 },
     // { w: 1, h: 1, c: 2, r: 4 },
     // { w: 1, h: 1, c: 3, r: 4 }
   ],
-  galleryMosaicSM : [
-    { w: 2, h: 2, c: 1, r: 1 },
-    { w: 1, h: 1, c: 3, r: 1 },
-    // { w: 1, h: 1, c: 3, r: 2 },
-    // { w: 1, h: 2, c: 1, r: 3 },
-    // { w: 2, h: 1, c: 2, r: 3 },
-    // { w: 1, h: 1, c: 2, r: 4 },
-    // { w: 1, h: 1, c: 3, r: 4 }
-  ],
+  // galleryMosaicSM : [
+  //   { w: 2, h: 2, c: 1, r: 1 },
+  //   { w: 1, h: 1, c: 3, r: 1 },
+  //   // { w: 1, h: 1, c: 3, r: 2 },
+  //   // { w: 1, h: 2, c: 1, r: 3 },
+  //   // { w: 2, h: 1, c: 2, r: 3 },
+  //   // { w: 1, h: 1, c: 2, r: 4 },
+  //   // { w: 1, h: 1, c: 3, r: 4 }
+  // ],
   galleryMaxRows: 1,
   galleryDisplayMode: 'rows',
 
@@ -211,7 +211,7 @@ const confHero = Object.assign({}, nanogalletyConf, {
     { w: 1, h: 1, c: 3, r: 3 },
   ],
   galleryMosaicXS : [
-    { w: 2, h: 2, c: 1, r: 1 },
+    { w: 1, h: 1, c: 1, r: 1 },
     { w: 1, h: 1, c: 2, r: 1 },
     { w: 1, h: 1, c: 3, r: 1 },
     { w: 1, h: 1, c: 1, r: 2 },
