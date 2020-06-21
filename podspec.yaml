@@ -11,6 +11,18 @@ localization:
   root_path: /{locale}/
   default_locale: en
   locales:
+    - en
+    - fr
+    - it
+    - de
+
+sitemap:
+  enabled: yes
+  path: /sitemap.xml
+  collections:
+  - pages
+  locales:
+    - en
     - fr
     - it
     - de

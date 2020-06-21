@@ -13,9 +13,15 @@
 
 
     {% for locale in podspec.localization.locales %}
-    <link rel="alternate" hreflang="{{locale}}"
-        href="{{g.doc('/content/pages/home.yaml', locale=locale).url}}" />
+    <link
+        rel="alternate"
+        href="{{g.doc('/content/pages/home.yaml', locale=locale).url}}"
+        hreflang="{{locale}}" />
     {% endfor %}
+    <link
+        rel="alternate"
+        href="{{g.doc('/content/pages/home.yaml', locale=locale).url}}"
+        hreflang="x-default" />
 
     <link href="{{g.static('/dist/css/site.min.css').url.path}}" rel="stylesheet">
     {% if podspec.meta.favicon_path %}

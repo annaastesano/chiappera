@@ -1,5 +1,6 @@
 {
   "/content/pages/home.yaml": [
+    "/content/pages/home.yaml",
     "/content/pages/home@de.yaml",
     "/content/pages/home@fr.yaml",
     "/content/pages/home@it.yaml",
@@ -11,6 +12,7 @@
     "/source/images/hero.jpg"
   ],
   "/content/pages/home@de.yaml": [
+    "/content/pages/home.yaml",
     "/content/pages/home@de.yaml",
     "/content/pages/home@fr.yaml",
     "/content/pages/home@it.yaml",
@@ -22,6 +24,7 @@
     "/source/images/hero.jpg"
   ],
   "/content/pages/home@fr.yaml": [
+    "/content/pages/home.yaml",
     "/content/pages/home@de.yaml",
     "/content/pages/home@fr.yaml",
     "/content/pages/home@it.yaml",
@@ -33,6 +36,7 @@
     "/source/images/hero.jpg"
   ],
   "/content/pages/home@it.yaml": [
+    "/content/pages/home.yaml",
     "/content/pages/home@de.yaml",
     "/content/pages/home@fr.yaml",
     "/content/pages/home@it.yaml",
