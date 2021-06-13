@@ -172,8 +172,9 @@ const conf1 = Object.assign({}, {
     { src: 'images/apartment1/3.jpg', srct: 'images/apartment1/t/3.jpg',},
     { src: 'images/apartment1/4.jpg', srct: 'images/apartment1/t/4.jpg',},
     { src: 'images/apartment1/5.jpg', srct: 'images/apartment1/t/5.jpg',},
-    // { src: 'images/apartment1/6.jpg', srct: 'images/apartment1/t/6.jpg',},
-    // { src: 'images/apartment1/7.jpg', srct: 'images/apartment1/t/7.jpg',},
+    { src: 'images/apartment1/6.jpg', srct: 'images/apartment1/t/6.jpg',},
+    { src: 'images/apartment1/7.jpg', srct: 'images/apartment1/t/7.jpg',},
+    { src: 'images/apartment1/8.jpg', srct: 'images/apartment1/t/8.jpg',},
   ],
 }, nanogalletyConf);
 
@@ -184,6 +185,8 @@ const conf2 = Object.assign({}, {
     { src: 'images/apartment2/3.jpg', srct: 'images/apartment2/3.jpg', },
     { src: 'images/apartment2/4.jpg', srct: 'images/apartment2/4.jpg', },
     { src: 'images/apartment2/5.jpg', srct: 'images/apartment2/5.jpg', },
+    { src: 'images/apartment2/6.jpg', srct: 'images/apartment2/6.jpg', },
+    { src: 'images/apartment2/7.jpg', srct: 'images/apartment2/7.jpg', },
   ]
 }, nanogalletyConf);
 
