@@ -1,121 +1,116 @@
 <!DOCTYPE html>
 
 <html lang="{{doc.locale.language}}" itemscope itemtype="http://schema.org/WebSite">
-  <head>
-    <meta charset="utf-8">
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-    <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
-    <link rel="preconnect" href="https://maps.googleapis.com">
-    <link rel="preconnect" href="https://maps.gstatic.com">
-    <link rel="preconnect" href="https://stats.g.doubleclick.net">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+  <link rel="preconnect" href="https://maps.googleapis.com">
+  <link rel="preconnect" href="https://maps.gstatic.com">
+  <link rel="preconnect" href="https://stats.g.doubleclick.net">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
 
 
-    {% for locale in podspec.localization.locales %}
-    <link
-        rel="alternate"
-        href="{{g.doc('/content/pages/home.yaml', locale=locale).url}}"
-        hreflang="{{locale}}" />
-    {% endfor %}
-    <link
-        rel="alternate"
-        href="{{g.doc('/content/pages/home.yaml', locale=locale).url}}"
-        hreflang="x-default" />
+  {% for locale in podspec.localization.locales %}
+  <link rel="alternate" href="{{g.doc('/content/pages/home.yaml', locale=locale).url}}" hreflang="{{locale}}" />
+  {% endfor %}
+  <link rel="alternate" href="{{g.doc('/content/pages/home.yaml', locale=locale).url}}" hreflang="x-default" />
 
-    <link href="{{g.static('/dist/css/site.min.css').url.path}}" rel="stylesheet">
-    {% if podspec.meta.favicon_path %}
-      <link rel="shortcut icon" href="{{g.static(podspec.meta.favicon_path).url.path}}">
-    {% endif %}
+  <link href="{{g.static('/dist/css/site.min.css').url.path}}" rel="stylesheet">
+  {% if podspec.meta.favicon_path %}
+  <link rel="shortcut icon" href="{{g.static(podspec.meta.favicon_path).url.path}}">
+  {% endif %}
 
-    {% if podspec.meta.image_path %}
-      <meta property="og:image" content="{{g.static(podspec.meta.image_path).url.path}}">
-    {% endif %}
-    <meta property="og:title" content="{% if doc.title %}{{doc.title}} {% endif %}">
-    <meta property="og:site_name" content="{{podspec.title}}">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{doc.url}}">
-    {% if doc.description %}
-      <meta name="description" content="{{doc.description}}" itemprop="description">
-      <meta property="og:description" content="{{doc.description}}">
-    {% endif %}
+  {% if podspec.meta.image_path %}
+  <meta property="og:image" content="{{g.static(podspec.meta.image_path).url.path}}">
+  {% endif %}
+  <meta property="og:title" content="{% if doc.title %}{{doc.title}} {% endif %}">
+  <meta property="og:site_name" content="{{podspec.title}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{doc.url}}">
+  {% if doc.description %}
+  <meta name="description" content="{{doc.description}}" itemprop="description">
+  <meta property="og:description" content="{{doc.description}}">
+  {% endif %}
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62555583-4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-62555583-4');
   </script>
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62555583-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62555583-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'UA-62555583-2');
-    </script>
+    gtag('config', 'UA-62555583-2');
+  </script>
 
-    <script>
-        var locales = ['it', 'fr', 'de'];
-        var lang = navigator.language || navigator.userLanguage;
-        var path = window.location.pathname
-        var isLocalised = false;
+  <script>
+    var locales = ['it', 'fr', 'de'];
+    var lang = navigator.language || navigator.userLanguage;
+    var path = window.location.pathname
+    var isLocalised = false;
 
-        if (path.indexOf(`/it`) == 0 || path.indexOf(`/fr`) == 0 || path.indexOf(`/de`) == 0) {
-          isLocalised = true;
-        }
+    if (path.indexOf(`/it`) == 0 || path.indexOf(`/fr`) == 0 || path.indexOf(`/de`) == 0) {
+      isLocalised = true;
+    }
 
-        for (i = 0; i < locales.length; i++) {
-          var locale = `/${locales[i]}`
+    for (i = 0; i < locales.length; i++) {
+      var locale = `/${locales[i]}`
 
-          if (path.indexOf(locale) == 0) {
-            path = path.replace(locale, '');
-            break;
-          }
-        }
+      if (path.indexOf(locale) == 0) {
+        path = path.replace(locale, '');
+        break;
+      }
+    }
 
-        if (!isLocalised) {
-          locales.forEach((locale) => {
+    if (!isLocalised) {
+      locales.forEach((locale) => {
 
-          if (lang.indexOf(locale) == 0)
-              window.location = `/${locale}` + path;
+        if (lang.indexOf(locale) == 0)
+          window.location = `/${locale}` + path;
 
-          });
-        }
-    </script>
+      });
+    }
+  </script>
 
-    <link href="https://fonts.googleapis.com/css?family=Rancho&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rancho&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>
+    {{doc.title}}
+  </title>
+</head>
 
-  </head>
-
-  <body {% block body_attributes %} {% endblock %}>
-    {% block header %}
-    {% endblock%}
-    <main>
-      {% block body %}
-        {% if doc.html %}
-          {{doc.html|render}}
-        {% endif %}
-      {% endblock %}
-    </main>
-
-    {% if env.name == 'dev' %}
-    {% else %}
+<body {% block body_attributes %} {% endblock %}>
+  {% block header %}
+  {% endblock%}
+  <main>
+    {% block body %}
+    {% if doc.html %}
+    {{doc.html|render}}
     {% endif %}
+    {% endblock %}
+  </main>
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <link    href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-  <script  type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+  {% if env.name == 'dev' %}
+  {% else %}
+  {% endif %}
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
 
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.1/jquery.fancybox.js" crossorigin="anonymous"></script>
@@ -123,5 +118,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.5/scrollreveal.min.js" crossorigin="anonymous"></script> -->
 
   <script src="{{g.static('/dist/js/site.min.js').url.path}}"></script>
-  </body>
+</body>
+
 </html>
